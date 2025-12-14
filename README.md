@@ -3,19 +3,26 @@
   <p><strong>Bill Gates'in servetini harcayarak eğlenceli bir alışveriş deneyimi yaşayın!</strong></p>
   
   <p>
-    <a href="#demo">Demo</a> •
+    <a href="https://spend-bill-gates-moneyy.netlify.app/">🌐 Canlı Demo</a> •
     <a href="#özellikler">Özellikler</a> •
     <a href="#kurulum">Kurulum</a> •
     <a href="#kullanım">Kullanım</a> •
     <a href="#proje-yapısı">Proje Yapısı</a>
   </p>
 
+  <a href="https://spend-bill-gates-moneyy.netlify.app/">
+    <img src="https://img.shields.io/badge/Demo-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify Demo" />
+  </a>
   <img src="https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
   <img src="https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Vite-5.x-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
 </div>
 
 ---
+
+## 🌐 Demo
+
+**[👉 Canlı Demoyu Görüntüle](https://spend-bill-gates-moneyy.netlify.app/)**
 
 ## 📖 Hakkında
 
