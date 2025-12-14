@@ -1,56 +1,69 @@
 .receipt {
-    background-color: #fff;
-    border: 2px dashed #333;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    margin-top: 1rem;
 }
 
 .receipt__title {
-    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    text-align: center;
 }
 
 .receipt__list {
     list-style: none;
+    max-width: 500px;
+    margin-inline: auto;
     padding: 0;
-    margin: 0;
 }
 
 .receipt__list-items {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
     padding: 0.5rem 0;
-    border-bottom: 1px solid #eee;
+    text-align: left;
 }
 
 .receipt__item-qty {
     margin-left: auto;
     margin-right: 1rem;
-    color: #666;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 .receipt__item-price {
+    min-width: 120px;
+    text-align: right;
     font-weight: bold;
+    color: #24C486;
+    font-size: 1.5rem;
 }
 
 .receipt__total {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-top: 1rem;
+    max-width: 500px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 1rem auto 0;
     padding-top: 1rem;
-    border-top: 2px solid #333;
+    border-top: 2px solid var(--border-color, #050505);
 }
 
 .receipt__total-name {
-    margin: 0;
+    text-align: left;
 }
 
 .receipt__total-price {
-    margin: 0;
-    font-weight: bold;
-    font-size: 1.2rem;
+    color: #24C486;
+    font-size: 2rem;
+    text-align: right;
 }

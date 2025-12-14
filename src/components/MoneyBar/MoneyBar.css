@@ -1,7 +1,7 @@
 .money-bar {
     position: sticky;
     top: 0;
-    background-color: #4caf50;
+    background: linear-gradient(180deg, #2ecc71, #1abc9c);
     color: white;
     padding: 1rem 2rem;
     text-align: center;

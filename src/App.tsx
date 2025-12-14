@@ -1,5 +1,5 @@
 import './App.css'
-import { ProductCard } from './components/ProductCard'
+import { ProductCard } from './components/product-cards'
 import { Header } from './components/Header'
 import { MoneyBar } from './components/MoneyBar'
 import { Receipt } from './components/Receipt'
@@ -82,7 +82,10 @@ function App() {
           ))}
         </section>
 
-        <Receipt purchasedItems={purchasedItems} totalSpent={totalSpent} />
+        {Object.values(purchasedItems).some(qty => qty > 0) && (
+          <Receipt purchasedItems={purchasedItems} totalSpent={totalSpent} />
+        )}
+
       </main>
     </div>
   )
