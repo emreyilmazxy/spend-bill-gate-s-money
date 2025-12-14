@@ -88,3 +88,77 @@
 .buy-btn:hover {
     background-color: #27ae60;
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .product-card {
+        padding: 0.75rem;
+    }
+
+    .product-img-wrapper {
+        height: 120px;
+    }
+
+    .product-title {
+        font-size: 0.9rem;
+    }
+
+    .product-price {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn-input-group {
+        gap: 0.25rem;
+        flex-wrap: wrap;
+    }
+
+    .sell-btn,
+    .buy-btn {
+        padding: 0.4rem 1.5rem;
+        font-size: 0.85rem;
+    }
+
+    .product-amount {
+        max-width: 4rem;
+        font-size: 1rem;
+        padding: 0.4rem 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        padding: 0.5rem;
+    }
+
+    .product-img-wrapper {
+        height: 100px;
+    }
+
+    .product-title {
+        font-size: 0.85rem;
+        word-break: break-word;
+    }
+
+    .product-price {
+        margin-bottom: 0.75rem;
+    }
+
+    .btn-input-group {
+        width: 100%;
+    }
+
+    .sell-btn,
+    .buy-btn {
+        padding: 0.35rem 1rem;
+        font-size: 0.7rem;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .product-amount {
+        max-width: 3rem;
+        font-size: 0.85rem;
+        padding: 0.35rem 0.25rem;
+    }
+}

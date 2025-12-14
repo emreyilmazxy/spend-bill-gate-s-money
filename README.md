@@ -155,3 +155,7 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
   <p>⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!</p>
   <p>Made with ❤️ using React & TypeScript</p>
 </div>
+
+## ⚠️ Not
+
+> Bu ödev orijinal olarak responsive tasarım içermemektedir. Mobil uyumluluk (responsive) yapısı **yapay zeka (AI) desteği** ile eklenmiştir.

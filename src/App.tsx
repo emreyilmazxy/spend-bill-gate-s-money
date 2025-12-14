@@ -15,18 +15,19 @@ function App() {
   const [displayMoney, setDisplayMoney] = useState<number>(100000000000);
   const [purchasedItems, setPurchasedItems] = useState<PurchasedItems>({});
 
-  // Animated money decrease effect
-
+  // Animated money effect (both increase and decrease)
   useEffect(() => {
     if (displayMoney === beginningMoney) return;
 
     const difference = displayMoney - beginningMoney;
-    const step = Math.ceil(difference / 8); // 8 steps completion
+    const step = Math.ceil(Math.abs(difference) / 8); // 8 steps completion
     const duration = 15; // Each step 15ms
 
     const timer = setTimeout(() => {
       if (displayMoney > beginningMoney) {
         setDisplayMoney(prev => Math.max(beginningMoney, prev - step));
+      } else if (displayMoney < beginningMoney) {
+        setDisplayMoney(prev => Math.min(beginningMoney, prev + step));
       }
     }, duration);
 

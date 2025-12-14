@@ -67,3 +67,80 @@
     font-size: 2rem;
     text-align: right;
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .receipt {
+        padding: 0.75rem 1rem;
+        margin-top: 0.75rem;
+    }
+
+    .receipt__title {
+        font-size: 1.75rem;
+    }
+
+    .receipt__list {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .receipt__list-items {
+        font-size: 0.85rem;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+    }
+
+    .receipt__item-qty {
+        font-size: 1rem;
+    }
+
+    .receipt__item-price {
+        min-width: auto;
+        font-size: 1rem;
+    }
+
+    .receipt__total {
+        max-width: 100%;
+        font-size: 1.3rem;
+    }
+
+    .receipt__total-price {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .receipt {
+        padding: 0.5rem;
+        margin: 0.5rem 0.25rem;
+    }
+
+    .receipt__title {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .receipt__list-items {
+        font-size: 0.75rem;
+        padding: 0.25rem 0;
+    }
+
+    .receipt__item-qty {
+        font-size: 0.85rem;
+        margin-right: 0.25rem;
+    }
+
+    .receipt__item-price {
+        font-size: 0.85rem;
+    }
+
+    .receipt__total {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .receipt__total-price {
+        font-size: 1.1rem;
+    }
+}

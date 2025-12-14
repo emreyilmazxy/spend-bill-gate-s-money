@@ -7,7 +7,6 @@
     background-color: #fff;
     padding: 2rem 1rem;
     text-align: center;
-    margin-bottom: 16px;
 }
 
 .img-wrapper {
@@ -29,4 +28,35 @@
     text-transform: uppercase;
     color: #333;
     margin: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .flex-wrapper {
+        padding: 1.5rem 1rem;
+    }
+
+    .img-wrapper {
+        width: 120px;
+        height: 120px;
+    }
+
+    .header-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .flex-wrapper {
+        padding: 1rem 0.5rem;
+    }
+
+    .img-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header-title {
+        font-size: 1.2rem;
+    }
 }
