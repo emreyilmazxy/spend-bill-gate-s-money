@@ -1,7 +1,9 @@
 import './App.css'
-import { ProductCard } from './components/product-cards'
+import { ProductCard } from './components/ProductCard'
+import { Header } from './components/Header'
+import { MoneyBar } from './components/MoneyBar'
+import { Receipt } from './components/Receipt'
 import { products } from './data/products'
-import billGates from './assets/images/billgates.jpg'
 import { useState, useEffect } from 'react';
 
 type PurchasedItems = {
@@ -61,23 +63,9 @@ function App() {
 
   return (
     <div className="container" >
-      {/* header billgates and title */}
-      <header className='flex-wrapper'>
-        <div className="img-wrapper">
-          <img src={billGates} alt="Bill Gates" />
-        </div>
+      <Header />
 
-        <h1 className='header-title'>spend bill gates' money</h1>
-
-      </header>
-
-      <aside className='money-bar'>
-        <p>${displayMoney.toLocaleString("en-US")}</p>
-      </aside>
-
-      {/* header billgates and title END */}
-
-      {/* products section */}
+      <MoneyBar displayMoney={displayMoney} />
 
       <main id='products'>
         <section className='product-grid'>
@@ -94,39 +82,8 @@ function App() {
           ))}
         </section>
 
-        {/* receipt section start */}
-        {Object.keys(purchasedItems).length > 0 && (
-          <aside className='receipt'>
-
-            <h2 className='receipt__title'>Your Receipt</h2>
-
-            <ul className="receipt__list">
-              {Object.entries(purchasedItems).map(([productId, quantity]) => {
-                const product = products.find(p => p.id === Number(productId));
-                if (!product || quantity === 0) return null;
-                return (
-                  <li key={productId} className="receipt__list-items">
-                    {product.name}
-                    <span className="receipt__item-qty">x{quantity}</span>
-                    <span className="receipt__item-price">${(product.price * quantity).toLocaleString("en-US")}</span>
-                  </li>
-                );
-              })}
-            </ul>
-
-            <div className='receipt__total'>
-              <h3 className='receipt__total-name'>Total:</h3>
-              <p className='receipt__total-price'>${totalSpent.toLocaleString("en-US")}</p>
-            </div>
-
-          </aside>
-        )}
-        {/* receipt section end */}
-
-
+        <Receipt purchasedItems={purchasedItems} totalSpent={totalSpent} />
       </main>
-
-
     </div>
   )
 }

@@ -1,117 +1,17 @@
-/* header section styles */
+/* Genel stiller ve container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
 
-.flex-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#products {
   padding: 2rem 0;
-  background-color: white;
-}
-
-.img-wrapper {
-  height: auto;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
-}
-
-.img-wrapper img {
-  display: block;
-  max-width: 9rem;
-  height: auto;
-  object-fit: cover;
-}
-
-.header-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-
-/* money bar styles */
-
-.money-bar {
-  background: linear-gradient(180deg, #2ecc71, #1abc9c);
-  color: white;
-  padding: 1rem 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
 /* product grid styles */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(250px, 1fr));
-  gap: 0.5rem;
-  background-color: #F1F2F6;
-  margin-top: 1rem;
-
-}
-
-/* receipt styles */
-
-.receipt {
-  text-align: center;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1rem 2rem;
-  margin-top: 1rem;
-}
-
-.receipt__title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.receipt__list {
-  list-style: none;
-  max-width: 500px;
-  margin-inline: auto;
-}
-
-.receipt__list-items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-}
-
-.receipt__item-qty {
-  margin-left: auto;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.receipt__item-price {
-  min-width: 80px;
-  text-align: right;
-  font-weight: bold;
-  color: #24C486;
-  font-size: 1.5rem;
-}
-
-.receipt__total {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 500px;
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin: 1rem auto 0;
-  border-top: 2px solid var(--border-color, #050505);
-}
-
-.receipt__total-price {
-  color: #24C486;
-  font-size: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
